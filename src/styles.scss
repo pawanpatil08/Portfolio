@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    color: black;
+    // background-image:url('./assets/background.jpg') ;
+    background: #B3B7C2;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    // background-color: #1c1c25;
+    //background: linear-gradient(180deg, #fca2b3 0%, #c3adf6 100%);
+    // background: linear-gradient(180deg, #1E0D1D 0%, #350820 100%);
+}
+section::before {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 60%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(
+        321.81deg,
+        rgba(179, 157, 231, 0.56) 14.52%,
+        rgba(252, 233, 255, 0.56) 76.14%,
+        rgba(252, 233, 255, 0.56) 76.14%
+    );
+    border-radius: 50%;
+}
+section::after {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(
+        321.81deg,
+        rgba(179, 157, 231, 0.56) 14.52%,
+        rgba(252, 233, 255, 0.56) 76.14%,
+        rgba(252, 233, 255, 0.56) 76.14%
+    );
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 400px !important;
+    }
+    .face {
+       justify-content: center;
+       flex-direction: column;
+       .profile{
+        margin-left: 11% !important;
+       }
+    }
+    section::before{
+        bottom: -6%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    }
+    section::after{
+    top: -10%;
+    left: 60%;
+    width: 50px;
+    height: 50px;
+    }
+  }
