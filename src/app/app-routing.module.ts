@@ -13,7 +13,7 @@ const routes: Routes = [
     component:AboutMeComponent
   } ,{
     path: '**',
-    redirectTo:'/',
+    redirectTo:'/about',
     
   }
 ];
