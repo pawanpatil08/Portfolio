@@ -8,8 +8,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "heroku-postbuild": "ng build --prod",
-    "start": "node server.js",
-    "postinstall": "ng build --output-path dist --aot --configuration production"
+    "start": "node server.js"
   },
   "private": true,
   "dependencies": {
