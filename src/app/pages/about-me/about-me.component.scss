@@ -1,0 +1,19 @@
+
+
+@mixin bold-color {
+    color: #ff6363;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.about-me,ul{
+    list-style: circle;
+    li{
+        font-size: 17px;
+        margin:  1% 0%;
+    }
+    b {
+       @include bold-color();
+    }
+    
+}
